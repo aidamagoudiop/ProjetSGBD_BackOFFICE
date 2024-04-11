@@ -1,0 +1,56 @@
+{
+    "QMainWindow":[
+        {
+            "title" : "My SQLite App"
+        }
+    ],
+    "QSettings":[
+        {
+            "ThemeSettings": [
+                {
+                    "CustonTheme": []
+                }
+            ],
+            "AppSettings": {
+                "OrginizationName": "My SQLite App",
+                "ApplicationName": "My SQLite App Company",
+                "OrganizationDomain": "My SQLite App.org "
+            }
+        }
+    ],
+    "QPushButtonGroup": [
+        {
+		"Buttons": [
+			"homeBtn",
+			"pvBtn"
+		],
+		"Style":[{
+			"Active": "color: whitesmoke; background-color: black; border: 1px solid #265e72; border-left:4px solid #cc5bce;background-color:#1b1b27; font-weight:bold;",
+			"NotActive": "background-color: tansparent; border: none;"
+		}]
+	    }
+    ],
+    "Qframe1": [{
+        "name": "leftMenu",
+        "defaultSize": [{
+            "width": 80,
+            "height": "auto"
+        }],
+        "collapsedSize": [{
+            "width": 0,
+            "height": "auto"
+        }],
+        "expandedSize": [{
+            "width": 200,
+            "height": "auto"
+        }],
+        "toggleButton": [{
+            "buttonName": "menuBtn"
+        }],
+        "menuTransitionAnimation": [{
+            "animationDuration": 1000,
+            "animationEasingCurve": "Linear"
+            
+        }]
+    }]
+}
