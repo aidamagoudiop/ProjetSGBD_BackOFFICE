@@ -1,28 +1,22 @@
-# main.py
+
 import tkinter as tk
-from pages import PagesManager
+from ui_dashboard import Ui_MainWindow
 
-class SampleApp(tk.Tk):
+class MainWindow(tk.Tk):
     def __init__(self):
-        tk.Tk.__init__(self)
-        
-        self.geometry("800x600")
-        self.title("Sample App")
+        super().__init__()
 
-        # Create instance of PagesManager
-        self.pages_manager = PagesManager(self)
+        # Créer une instance de l'interface graphique
+        self.ui = Ui_MainWindow(self)
 
-        # Show the accueil page initially
-        self.pages_manager.show_accueil()
-
-# Main function
+# Fonction principale
 def main():
-    # Create an instance of the main application
-    app = SampleApp()
+    # Créer une instance de la fenêtre principale
+    app = MainWindow()
 
-    # Run the main application loop
+    # Lancer la boucle principale de l'application Tkinter
     app.mainloop()
 
-# Check if the script is being run directly
+# Vérifier si c'est le fichier principal exécuté
 if __name__ == "__main__":
     main()
